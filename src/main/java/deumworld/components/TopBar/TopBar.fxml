@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="topBarPanel" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="28.0" styleClass="topBarBackground" stylesheets="@TopBar.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deumworld.components.TopBar.TopBar">
+   <right>
+      <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="128.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView id="minBtn" fx:id="minBtn" fitHeight="20.0" fitWidth="30.0" onMouseClicked="#minimazeWindow" onMouseEntered="#makeMinActive" onMouseExited="#makeMinUnActive" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons/MinDeff.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView id="expandBtn" fx:id="expandBtn" fitHeight="25.0" fitWidth="33.0" onMouseClicked="#expandWindow" onMouseEntered="#makeExpandActive" onMouseExited="#makeExpandUnActive" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons/ExpandDeff.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView id="minBtn" fx:id="closeBtn" fitHeight="17.0" fitWidth="17.0" onMouseClicked="#closeWindow" onMouseEntered="#makeCloseActive" onMouseExited="#makeCloseUnActive" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons/CloseDeff.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               
+            </ImageView>
+         </children>
+      </HBox>
+   </right>
+</BorderPane>

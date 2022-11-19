@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="cardBack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="256.0" styleClass="serverCard" stylesheets="@card.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deumworld.components.Card.CardController">
+    <HBox.margin>
+        <Insets right="20.0" />
+    </HBox.margin>
+    <center>
+        <BorderPane fx:id="buttonBack" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="80.0" styleClass="dowloadBtnBackground" stylesheets="@card.css" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fx:id="mainBtn" fitHeight="43.0" fitWidth="40.0" onMouseClicked="#startGame" onMouseEntered="#enterButton" onMouseExited="#exitButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../images/icons/playIconDeff.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets top="1.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </center></BorderPane>
+    </center>
+    <bottom>
+        <BorderPane prefHeight="79.0" prefWidth="174.0" styleClass="titleNameBg" stylesheets="@card.css" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+            <Insets left="40.0" right="40.0" />
+            </BorderPane.margin>
+            <center>
+            <Label styleClass="titleName" text="Server" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </bottom>
+   <top>
+      <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="36.0" prefWidth="111.0" styleClass="infoBg" BorderPane.alignment="CENTER_LEFT">
+        <BorderPane.margin>
+            <Insets top="20.0" />
+        </BorderPane.margin>
+         <children>
+            <Pane prefHeight="47.0" prefWidth="4.0" styleClass="statusPane" stylesheets="@card.css" />
+            <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons/userStatus.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label styleClass="playersOnline" text="0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label styleClass="playersSep" text="/">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label styleClass="playesMax" text="40" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

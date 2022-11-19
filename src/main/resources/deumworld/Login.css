@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'RadioCanada-Medium';
+    src: url('./fonts/RadioCanada-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RadioCanada-Regular';
+    src: url('./fonts/RadioCanada-Regular.ttf');
+}
+
+.background{
+    -fx-background-color: #383D47;
+
+}
+
+.subTitle{
+    -fx-font-family: "RadioCanada-Medium";
+    -fx-font-weight: 700;
+    -fx-font-size: 20;
+    -fx-text-fill: #F4F5F3;
+}
+
+.textFieldBg{
+    -fx-background-color: #454B5B;
+    -fx-border-radius: 27;
+    -fx-background-radius: 27;
+}
+
+.textField{
+    -fx-font-family: "RadioCanada-Medium";
+    -fx-font-style: normal;
+    -fx-font-weight: 600;
+    -fx-font-size: 18;
+    -fx-text-fill: #F4F5F3;
+    -fx-background-color: #454b5b00;
+}
+
+.logInBtn{
+    -fx-background-color: linear-gradient(to right,#FBA16C, #FEC484);
+    -fx-border-radius: 27;
+    -fx-background-radius: 27;
+    -fx-font-size: 18;
+    -fx-text-fill: #F4F5F3;
+    -fx-font-family: "RadioCanada-Medium";
+    -fx-font-style: normal;
+    -fx-font-weight: 900;
+}

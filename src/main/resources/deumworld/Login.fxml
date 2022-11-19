@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="930.0" styleClass="background" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deumworld.controllers.LoginController">
+   <top>
+      <fx:include fx:id="topBar" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="930.0" source="components/TopBar/TopBar.fxml" />
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="368.0" fitWidth="581.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/MessalandTitile.png" />
+               </image>
+            </ImageView>
+            <Label styleClass="subTitle" stylesheets="@Login.css" text="%subtitle.text" />
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="700.0" prefHeight="50.0" prefWidth="500.0" styleClass="textFieldBg" stylesheets="@Login.css">
+              <VBox.margin>
+                 <Insets bottom="100.0" left="20.0" right="20.0" />
+              </VBox.margin>
+               <center>
+                 <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="loginTextField" onMouseClicked="#styleTextField" prefHeight="40.0" prefWidth="541.0" promptText="%nickname.text" styleClass="textField" stylesheets="@Login.css">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <Button fx:id="logInBtn" mnemonicParsing="false" onMouseClicked="#logIn" prefHeight="50.0" prefWidth="230.0" styleClass="logInBtn" stylesheets="@Login.css" text="Button" />
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

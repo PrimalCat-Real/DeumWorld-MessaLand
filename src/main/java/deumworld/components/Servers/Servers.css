@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'RadioCanada-Regular';
+    src: url('../../fonts/RadioCanada-Regular.ttf');
+}
+@font-face {
+    font-family: 'RadioCanada-Medium';
+    src: url('../../fonts/RadioCanada-Medium.ttf');
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 11;
+    -fx-border-radius : 11;
+    -fx-radius : 11;
+ }
+ .scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0;
+
+}
+
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color : #969BA5;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 11;
+}
+
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #FBA16C, #FEC484);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 11;
+}
+
+
+
+.scroll-bar:horizontal .track {
+    -fx-background-color: #282B33;
+ }
+.serversBg{
+    -fx-background-color: #383D47;
+}
+.serverCard{
+    -fx-background-color: #282B33;
+    -fx-border-radius: 5;
+    -fx-radius: 5;
+}
+
+.dowloadBtnBackground{
+    /* -fx-background-color: #2d2d32b5; */
+    -fx-background-color: #2d2d32b5;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-radius: 100;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(87, 87, 87, 0.489), 5, 1, 0, 0);
+    -fx-border-color: #AAAAAA;
+    /* -fx-effect: dropshadow(three-pass-box, rgba(243, 236, 245, 0.8), 0, 0, 0, 0); */
+}
+
+.titleNameBg{
+    -fx-background-color: #2d2e32ac;
+    /* -fx-border-radius-top-left: 15px; */
+    -fx-border-radius: 11 11 0 0;
+    -fx-background-radius: 11 11 0 0;
+}
+
+.statusPane{
+    -fx-background-color: #55A814;
+}
+
+.playersOnline{
+    -fx-text-fill: #F4F5F3;
+    -fx-font-size: 17;
+    -fx-font-family: "RadioCanada-Regular";
+}
+
+.playesMax{
+    -fx-text-fill: #F4F5F3;
+    -fx-font-size: 17;
+    -fx-font-family: "RadioCanada-Regular";
+}
+
+.playersSep{
+    -fx-text-fill: #F4F5F3;
+    -fx-font-size: 17;
+    -fx-font-family: "RadioCanada-Regular";
+}
+
+.infoBg{
+    -fx-background-color: #2d2e32ac;
+    -fx-border-radius: 0 11 11 0;
+    -fx-background-radius: 0 11 11 0;
+}
+
+.titleName{
+    -fx-text-fill: #F4F5F3;
+    -fx-font-size: 20;
+    -fx-font-family: "RadioCanada-Medium";
+    -fx-font-style: normal;
+    -fx-font-weight: 900;
+}

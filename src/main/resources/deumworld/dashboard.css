@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'RadioCanada-Medium';
+    src: url('./fonts/RadioCanada-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RadioCanada-Regular';
+    src: url('./fonts/RadioCanada-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Catamaran-Bold';
+    src: url('./fonts/Catamaran-Bold.ttf');
+}
+
+.background{
+    -fx-background-color: #383D47;
+}
+
+.sidepanel{
+    -fx-background-color: #282B33;
+    -fx-radius: 11;
+    -fx-background-radius: 11;
+}
+
+.separotor{
+    -fx-background-color: #454B5B;
+}
+
+.menuBar{
+    -fx-background-color: #DEE0E4;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.projectName{
+    -fx-font-family: "Catamaran-Bold";
+    -fx-font-style: normal;
+    -fx-font-weight: 900;
+    -fx-font-size: 24;
+    -fx-text-fill: #F4F5F3;
+}
+
+.textWorld{
+    -fx-font-family: "RadioCanada-Medium";
+    -fx-font-style: normal;
+    -fx-font-weight: 600;
+    -fx-font-size: 18;
+    -fx-text-fill: #F4F5F3;
+}
+
+.text-field:focused {
+    -fx-focus-color: transparent;
+}

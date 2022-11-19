@@ -1,0 +1,73 @@
+.scroll-pane > .viewport {
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 11;
+    -fx-border-radius : 11;
+    -fx-radius : 11;
+ }
+ 
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0;
+
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color : #969BA5;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 11;
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #FBA16C, #FEC484);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 11;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: #282B33;
+ }
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+-fx-shape : " ";    
+-fx-padding :0;
+}
+
+/*
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0;
+}
+
+
+
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #FBA16C, #FEC484);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 11;
+}
+
+
+
+.scroll-bar:horizontal .track {
+    -fx-background-color: #282B33;
+ } */
+
+.componentBackground{
+    -fx-background-color: #383D47;
+}
+
+.modnameText{
+    -fx-font-size: 20px;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8F8;
+}
+.modlistBlockBg{
+    -fx-background-color: #282b33;
+    -fx-border-radius: 11px;
+    -fx-background-radius: 11px;
+}
+.scrolePane{
+    -fx-background-color: transparent;
+}

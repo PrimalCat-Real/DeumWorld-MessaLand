@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="BorderPane" prefHeight="560.0" prefWidth="930.0">
+        <top>
+            <fx:include fx:id="test" source="components/TopBar/TopBar.fxml" />
+        </top>
+         <bottom>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane> -->
+
+<BorderPane id="BorderPane" prefHeight="560.0" prefWidth="930.0" styleClass="background" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deumworld.controllers.DashboardController">
+   <top>
+      <fx:include fx:id="topBar" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="930.0" source="components/TopBar/TopBar.fxml" />
+   </top>
+   <left>
+      <BorderPane fx:id="sideMenu" prefHeight="532.0" prefWidth="50.0" styleClass="sidepanel" BorderPane.alignment="CENTER">
+         <top>
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="458.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="burgerMenu" onMouseClicked="#expandSideMenu" onMouseEntered="#makeBarsActive" onMouseExited="#makeBarsUnActive" prefHeight="33.0" prefWidth="30.0">
+                     <children>
+                        <Pane fx:id="firthBar" layoutX="3.0" layoutY="10.0" onMouseEntered="#makeBarsActive" onMouseExited="#makeBarsUnActive" prefHeight="2.0" prefWidth="25.0" styleClass="menuBar" stylesheets="@dashboard.css" />
+                        <Pane fx:id="secondBar" layoutX="3.0" layoutY="19.0" prefHeight="2.0" prefWidth="25.0" styleClass="menuBar" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <Pane maxWidth="25.0" minWidth="29.0" prefHeight="1.5" prefWidth="29.0" styleClass="separotor" stylesheets="@dashboard.css" />
+                  <ImageView id="dashboardBtn" fx:id="dashboardBtn" fitHeight="21.0" fitWidth="21.0" onMouseClicked="#openServers" onMouseEntered="#makeActiveDashboardBtn" onMouseExited="#makeUnActiveDashboardBtn" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@images/icons/DassboardDeff.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="modsBtn" fx:id="modsBtn" fitHeight="26.0" fitWidth="25.0" layoutX="25.0" layoutY="104.0" onMouseClicked="#openMods" onMouseEntered="#makeActiveModsBtn" onMouseExited="#makeUnActiveModsBtn" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@images/icons/ModsDeff.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="18.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="50.0" />
+               </children>
+            </VBox>
+         </top>
+         <BorderPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </BorderPane.margin>
+         <bottom>
+            <ImageView id="logoutBtn" fx:id="logoutBtn" fitHeight="21.0" fitWidth="21.0" onMouseClicked="#logOut" onMouseEntered="#makeActiveLogoutBtn" onMouseExited="#makeUnActiveLogoutBtn" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@images/icons/LogoutDeff.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets bottom="18.0" left="2.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </bottom>
+      </BorderPane>
+   </left>
+   <center>
+      <VBox fx:id="mainBlock" prefHeight="586.0" prefWidth="536.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="36.0" prefWidth="520.0">
+               <left>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="120.0" BorderPane.alignment="CENTER_LEFT">
+                     <children>
+                        <Label styleClass="projectName" text="MESSA" />
+                        <Label styleClass="textWorld" text="land">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </left>
+               <VBox.margin>
+                  <Insets top="36.0" />
+               </VBox.margin>
+               <right>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons/ChangeLandDeff.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </right>
+            </BorderPane>
+            <Pane maxWidth="1.7976931348623157E308" minWidth="29.0" prefHeight="2.0" prefWidth="524.0" styleClass="separotor" stylesheets="@dashboard.css">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Pane>
+            <!-- <fx:include fx:id="servers" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="components/Servers/Servers.fxml" /> -->
+         </children></VBox>
+   </center>
+   <right>
+         <fx:include fx:id="userBlcok" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="components/UserInfo/userinfo.fxml" />
+         <BorderPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </BorderPane.margin>
+   </right>
+   
+</BorderPane>

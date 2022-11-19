@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.layout.Pane?>
+<ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="536.0" style="-fx-background-color: #383D47;" styleClass="serversBg" stylesheets="@Servers.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deumworld.controllers.ServerController">
+   <content>
+      <HBox fx:id="serverList" alignment="CENTER_LEFT" prefHeight="426.0" prefWidth="790.0">
+         <children>
+             <!-- <fx:include fx:id="server1" source="../Card/Card.fxml" />
+            <fx:include fx:id="server2" source="../Card/Card.fxml" />
+            <fx:include fx:id="server3" source="../Card/Card.fxml" /> -->
+            <!-- <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="396.0" prefWidth="260.0" styleClass="serverCard" stylesheets="@Servers.css">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <center>
+                  <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="80.0" styleClass="dowloadBtnBackground" stylesheets="@Servers.css" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <BorderPane prefHeight="79.0" prefWidth="174.0" styleClass="titleNameBg" stylesheets="@Servers.css" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </BorderPane.margin>
+                     <center>
+                        <Label styleClass="titleName" text="Server" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </bottom>
+               <top>
+                  
+                  <HBox id="infoBg" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: #2d2e32ac;" stylesheets="@Servers.css" BorderPane.alignment="TOP_LEFT">
+                     <children>
+                        <Pane id="statusPane" prefHeight="51.0" prefWidth="3.0" style="-fx-background-color: #55A814;" stylesheets="@Servers.css" />
+                        <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../images/icons/userStatus.png" />
+                           </image></ImageView>
+                        <Label styleClass="playersOnline" stylesheets="@Servers.css" text="0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin></Label>
+                        <Label styleClass="playersSep" text="/" />
+                        <Label styleClass="playesMax" stylesheets="@Servers.css" text="40">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin></Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="30.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="360.0" prefWidth="260.0" styleClass="serverCard" stylesheets="@Servers.css">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </BorderPane>
+            <BorderPane layoutX="260.0" layoutY="30.0" prefHeight="360.0" prefWidth="240.0" styleClass="serverCard" stylesheets="@Servers.css" /> -->
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </content>
+</ScrollPane>
